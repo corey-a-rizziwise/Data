@@ -41,10 +41,10 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="fDP-T4-VlS">
             <objects>
-                <viewController id="VrV-G0-Fqr" sceneMemberID="viewController">
+                <viewController id="VrV-G0-Fqr" customClass="LoginViewController" customModule="Traverse" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RZ6-Q3-oF6"/>
                         <viewControllerLayoutGuide type="bottom" id="zxH-kQ-iN7"/>
@@ -107,10 +107,10 @@
             </objects>
             <point key="canvasLocation" x="1812" y="311"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="Unv-Ag-VkP">
             <objects>
-                <viewController id="l8H-I5-oPe" sceneMemberID="viewController">
+                <viewController id="l8H-I5-oPe" customClass="SignUpViewController" customModule="Traverse" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kIc-Fh-C7X"/>
                         <viewControllerLayoutGuide type="bottom" id="qPr-Mb-YY0"/>
