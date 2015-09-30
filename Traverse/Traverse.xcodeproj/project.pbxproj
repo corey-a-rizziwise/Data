@@ -110,7 +110,7 @@
 			children = (
 				2208C5E51BBBA4D70087E663 /* Theo.xcodeproj */,
 				2208C5C11BBB93500087E663 /* Traverse */,
-				2208C5F11BBBA5120087E663 /* New Group */,
+				2208C5F11BBBA5120087E663 /* Theo */,
 				2208C5D71BBB93500087E663 /* TraverseTests */,
 				2208C5C01BBB93500087E663 /* Products */,
 				7CEDAA123A5DAC0A953BBEB8 /* Pods */,
@@ -174,7 +174,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2208C5F11BBBA5120087E663 /* New Group */ = {
+		2208C5F11BBBA5120087E663 /* Theo */ = {
 			isa = PBXGroup;
 			children = (
 				2208C5F81BBBA5360087E663 /* Request.swift */,
@@ -184,7 +184,7 @@
 				2208C5F31BBBA52E0087E663 /* Node.swift */,
 				2208C5F41BBBA52E0087E663 /* Cypher.swift */,
 			);
-			name = "New Group";
+			name = Theo;
 			sourceTree = "<group>";
 		};
 		69F960651BD3600F010EBFF7 /* Frameworks */ = {
