@@ -80,6 +80,9 @@
                                 <state key="normal" title="Login">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="hqC-6J-If1" kind="presentation" id="zqX-eH-9fo"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -89,10 +92,10 @@
             </objects>
             <point key="canvasLocation" x="1153" y="-23"/>
         </scene>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="pSj-Y4-7Ap">
             <objects>
-                <viewController id="hqC-6J-If1" sceneMemberID="viewController">
+                <viewController id="hqC-6J-If1" customClass="mapViewController" customModule="Traverse" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Hha-PB-4xJ"/>
                         <viewControllerLayoutGuide type="bottom" id="bcE-YQ-4oa"/>
@@ -157,6 +160,9 @@
                                 <state key="normal" title="Sign Up">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="hqC-6J-If1" kind="show" id="SAV-PQ-Pp1"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -167,4 +173,7 @@
             <point key="canvasLocation" x="1153" y="685"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="SAV-PQ-Pp1"/>
+    </inferredMetricsTieBreakers>
 </document>

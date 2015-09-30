@@ -24,6 +24,8 @@
 		2208C64F1BBBB9630087E663 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2208C64C1BBBB9630087E663 /* Request.swift */; };
 		2208C6501BBBB9630087E663 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2208C64D1BBBB9630087E663 /* Session.swift */; };
 		2208C6511BBBB9630087E663 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2208C64E1BBBB9630087E663 /* Client.swift */; };
+		2208C6551BBBBCE70087E663 /* mapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2208C6541BBBBCE70087E663 /* mapViewController.swift */; };
+		2208C65B1BBBBD580087E663 /* temp.m in Sources */ = {isa = PBXBuildFile; fileRef = 2208C65A1BBBBD580087E663 /* temp.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +86,9 @@
 		2208C64C1BBBB9630087E663 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		2208C64D1BBBB9630087E663 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		2208C64E1BBBB9630087E663 /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		2208C6541BBBBCE70087E663 /* mapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mapViewController.swift; sourceTree = "<group>"; };
+		2208C6591BBBBD570087E663 /* Traverse-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Traverse-Bridging-Header.h"; sourceTree = "<group>"; };
+		2208C65A1BBBBD580087E663 /* temp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = temp.m; sourceTree = "<group>"; };
 		32F24CF2693F89279BF3E72C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7980DDDC4F2CCBDF5AD6A16B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8175D8F96ED74C3DA17930D8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -112,6 +117,8 @@
 		2208C6071BBBB7C00087E663 = {
 			isa = PBXGroup;
 			children = (
+				2208C6541BBBBCE70087E663 /* mapViewController.swift */,
+				2208C65A1BBBBD580087E663 /* temp.m */,
 				2208C6391BBBB9170087E663 /* Theo.xcodeproj */,
 				2208C6121BBBB7C00087E663 /* Traverse */,
 				2208C6451BBBB9480087E663 /* Theo */,
@@ -119,6 +126,7 @@
 				2208C6111BBBB7C00087E663 /* Products */,
 				6EFFAA7B70ADBDE5050E8607 /* Pods */,
 				CB378E6F6B126A951D4F2493 /* Frameworks */,
+				2208C6591BBBBD570087E663 /* Traverse-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -372,10 +380,12 @@
 				2208C6491BBBB95D0087E663 /* Relationship.swift in Sources */,
 				2208C64F1BBBB9630087E663 /* Request.swift in Sources */,
 				2208C6361BBBB8900087E663 /* LoginViewController.swift in Sources */,
+				2208C65B1BBBBD580087E663 /* temp.m in Sources */,
 				2208C6181BBBB7C00087E663 /* StartViewController.swift in Sources */,
 				2208C64A1BBBB95D0087E663 /* Node.swift in Sources */,
 				2208C64B1BBBB95D0087E663 /* Cypher.swift in Sources */,
 				2208C6381BBBB89D0087E663 /* SignUpViewController.swift in Sources */,
+				2208C6551BBBBCE70087E663 /* mapViewController.swift in Sources */,
 				2208C6161BBBB7C00087E663 /* AppDelegate.swift in Sources */,
 				2208C6511BBBB9630087E663 /* Client.swift in Sources */,
 				2208C6501BBBB9630087E663 /* Session.swift in Sources */,
@@ -506,9 +516,12 @@
 			baseConfigurationReference = 7980DDDC4F2CCBDF5AD6A16B /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Traverse/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Traverse-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -517,9 +530,11 @@
 			baseConfigurationReference = 8175D8F96ED74C3DA17930D8 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Traverse/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Traverse-Bridging-Header.h";
 			};
 			name = Release;
 		};
