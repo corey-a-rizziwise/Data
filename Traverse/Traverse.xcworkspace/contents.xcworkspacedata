@@ -2,7 +2,11 @@
 <Workspace
    version = "1.0">
    <FileRef
+<<<<<<< HEAD
       location = "group:Traverse.xcodeproj">
+=======
+      location = "group:../../loginMap/Traverse/Traverse.xcodeproj">
+>>>>>>> origin/master
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

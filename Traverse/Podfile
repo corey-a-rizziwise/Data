@@ -1,4 +1,8 @@
 source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.1'
 pod 'GoogleMaps'
+<<<<<<< HEAD
 xcodeproj '/Users/CoreyRizzi-Wise/Documents/LoginMap/Traverse/Traverse'
+=======
+xcodeproj '/Users/Sam/Desktop/loginMap/Traverse/Traverse'
+>>>>>>> origin/master

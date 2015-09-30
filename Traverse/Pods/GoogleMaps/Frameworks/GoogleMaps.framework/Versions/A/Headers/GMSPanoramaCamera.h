@@ -52,9 +52,18 @@
 
 /**
  * The field of view (FOV) encompassed by the larger dimension (width or height) of the view in
+<<<<<<< HEAD
  * degrees. This is clamped to the range [1, 160] degrees, and has a default value of 90.
  *
  * Lower FOV values produce a zooming in effect; larger FOV values produce an fisheye effect.
+=======
+ * degrees at zoom 1. This is clamped to the range [1, 160] degrees, and has a default value of 90.
+ *
+ * Lower FOV values produce a zooming in effect; larger FOV values produce an fisheye effect.
+ *
+ * Note: This is not the displayed FOV if zoom is anything other than 1.  User zoom gestures
+ * control the zoom property, not this property.
+>>>>>>> origin/master
  */
 @property(nonatomic, assign, readonly) double FOV;
 

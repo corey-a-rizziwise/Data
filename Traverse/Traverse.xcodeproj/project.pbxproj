@@ -13,9 +13,23 @@
 		2208C5CC1BBB93500087E663 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2208C5CB1BBB93500087E663 /* Images.xcassets */; };
 		2208C5CF1BBB93500087E663 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2208C5CD1BBB93500087E663 /* LaunchScreen.xib */; };
 		2208C5DB1BBB93500087E663 /* TraverseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2208C5DA1BBB93500087E663 /* TraverseTests.swift */; };
+<<<<<<< HEAD
 		26010A441BBBA9450027945D /* temp.m in Sources */ = {isa = PBXBuildFile; fileRef = 26010A431BBBA9450027945D /* temp.m */; };
 		26010A461BBBACA30027945D /* mapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26010A451BBBACA30027945D /* mapViewController.swift */; };
 		8A509F87EA96D333D016A9D3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FBB23926B503B1FEDA8325A /* libPods.a */; };
+=======
+		2208C5EE1BBBA4E90087E663 /* Theo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2208C5EB1BBBA4D70087E663 /* Theo.framework */; };
+		2208C5F01BBBA5000087E663 /* Theo.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 2208C5EB1BBBA4D70087E663 /* Theo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2208C5F51BBBA52E0087E663 /* Relationship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2208C5F21BBBA52E0087E663 /* Relationship.swift */; };
+		2208C5F61BBBA52E0087E663 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2208C5F31BBBA52E0087E663 /* Node.swift */; };
+		2208C5F71BBBA52E0087E663 /* Cypher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2208C5F41BBBA52E0087E663 /* Cypher.swift */; };
+		2208C5FB1BBBA5360087E663 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2208C5F81BBBA5360087E663 /* Request.swift */; };
+		2208C5FC1BBBA5360087E663 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2208C5F91BBBA5360087E663 /* Session.swift */; };
+		2208C5FD1BBBA5360087E663 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2208C5FA1BBBA5360087E663 /* Client.swift */; };
+		2208C6031BBBADB90087E663 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2208C6021BBBADB90087E663 /* LoginViewController.swift */; };
+		2208C6051BBBAE030087E663 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2208C6041BBBAE030087E663 /* SignUpViewController.swift */; };
+		5F8F84CA3557EC42F8D63367 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 89849D314F6CBDB6EA0C50EC /* libPods.a */; };
+>>>>>>> origin/master
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,7 +40,35 @@
 			remoteGlobalIDString = 2208C5BE1BBB93500087E663;
 			remoteInfo = Traverse;
 		};
+		2208C5EA1BBBA4D70087E663 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2208C5E51BBBA4D70087E663 /* Theo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 01FB2CC019C7DAB800D429E7;
+			remoteInfo = Theo;
+		};
+		2208C5EC1BBBA4D70087E663 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2208C5E51BBBA4D70087E663 /* Theo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 01FB2CCB19C7DAB800D429E7;
+			remoteInfo = TheoTests;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2208C5EF1BBBA4EE0087E663 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2208C5F01BBBA5000087E663 /* Theo.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2208C5BF1BBB93500087E663 /* Traverse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Traverse.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,12 +81,27 @@
 		2208C5D41BBB93500087E663 /* TraverseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TraverseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2208C5D91BBB93500087E663 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2208C5DA1BBB93500087E663 /* TraverseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraverseTests.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		26010A421BBBA9450027945D /* Traverse-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Traverse-Bridging-Header.h"; sourceTree = "<group>"; };
 		26010A431BBBA9450027945D /* temp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = temp.m; sourceTree = "<group>"; };
 		26010A451BBBACA30027945D /* mapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mapViewController.swift; sourceTree = "<group>"; };
 		78BFE542484D857DEF32DE76 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		7FBB23926B503B1FEDA8325A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E44BBACF33DB0DE4A9505463 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+=======
+		2208C5E51BBBA4D70087E663 /* Theo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Theo.xcodeproj; path = "../neo4j-ios-master/Source/Theo/Theo.xcodeproj"; sourceTree = "<group>"; };
+		2208C5F21BBBA52E0087E663 /* Relationship.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Relationship.swift; sourceTree = "<group>"; };
+		2208C5F31BBBA52E0087E663 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		2208C5F41BBBA52E0087E663 /* Cypher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cypher.swift; sourceTree = "<group>"; };
+		2208C5F81BBBA5360087E663 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		2208C5F91BBBA5360087E663 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		2208C5FA1BBBA5360087E663 /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		2208C6021BBBADB90087E663 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../../../LoginMap/Traverse/Traverse/LoginViewController.swift; sourceTree = "<group>"; };
+		2208C6041BBBAE030087E663 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = ../../../LoginMap/Traverse/Traverse/SignUpViewController.swift; sourceTree = "<group>"; };
+		3534D106ACC0DBB98174B0D7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "../../LoginMap/Traverse/Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		89849D314F6CBDB6EA0C50EC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB967201A285DFD811312156 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "../../LoginMap/Traverse/Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+>>>>>>> origin/master
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +109,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				8A509F87EA96D333D016A9D3 /* libPods.a in Frameworks */,
+=======
+				2208C5EE1BBBA4E90087E663 /* Theo.framework in Frameworks */,
+				5F8F84CA3557EC42F8D63367 /* libPods.a in Frameworks */,
+>>>>>>> origin/master
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,11 +131,18 @@
 		2208C5B61BBB93500087E663 = {
 			isa = PBXGroup;
 			children = (
+				2208C5E51BBBA4D70087E663 /* Theo.xcodeproj */,
 				2208C5C11BBB93500087E663 /* Traverse */,
+				2208C5F11BBBA5120087E663 /* Theo */,
 				2208C5D71BBB93500087E663 /* TraverseTests */,
 				2208C5C01BBB93500087E663 /* Products */,
+<<<<<<< HEAD
 				901F7FFAA7E4A12EE9D67C1F /* Pods */,
 				8525BE4D41275F1CB8451AA3 /* Frameworks */,
+=======
+				7CEDAA123A5DAC0A953BBEB8 /* Pods */,
+				69F960651BD3600F010EBFF7 /* Frameworks */,
+>>>>>>> origin/master
 			);
 			sourceTree = "<group>";
 		};
@@ -92,6 +161,8 @@
 				2208C5C41BBB93500087E663 /* AppDelegate.swift */,
 				26010A431BBBA9450027945D /* temp.m */,
 				2208C5C61BBB93500087E663 /* StartViewController.swift */,
+				2208C6021BBBADB90087E663 /* LoginViewController.swift */,
+				2208C6041BBBAE030087E663 /* SignUpViewController.swift */,
 				2208C5C81BBB93500087E663 /* Main.storyboard */,
 				26010A451BBBACA30027945D /* mapViewController.swift */,
 				2208C5CB1BBB93500087E663 /* Images.xcassets */,
@@ -127,19 +198,56 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		8525BE4D41275F1CB8451AA3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				7FBB23926B503B1FEDA8325A /* libPods.a */,
+=======
+		2208C5E61BBBA4D70087E663 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2208C5EB1BBBA4D70087E663 /* Theo.framework */,
+				2208C5ED1BBBA4D70087E663 /* TheoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2208C5F11BBBA5120087E663 /* Theo */ = {
+			isa = PBXGroup;
+			children = (
+				2208C5F81BBBA5360087E663 /* Request.swift */,
+				2208C5F91BBBA5360087E663 /* Session.swift */,
+				2208C5FA1BBBA5360087E663 /* Client.swift */,
+				2208C5F21BBBA52E0087E663 /* Relationship.swift */,
+				2208C5F31BBBA52E0087E663 /* Node.swift */,
+				2208C5F41BBBA52E0087E663 /* Cypher.swift */,
+			);
+			name = Theo;
+			sourceTree = "<group>";
+		};
+		69F960651BD3600F010EBFF7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89849D314F6CBDB6EA0C50EC /* libPods.a */,
+>>>>>>> origin/master
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		901F7FFAA7E4A12EE9D67C1F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				E44BBACF33DB0DE4A9505463 /* Pods.debug.xcconfig */,
 				78BFE542484D857DEF32DE76 /* Pods.release.xcconfig */,
+=======
+		7CEDAA123A5DAC0A953BBEB8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB967201A285DFD811312156 /* Pods.debug.xcconfig */,
+				3534D106ACC0DBB98174B0D7 /* Pods.release.xcconfig */,
+>>>>>>> origin/master
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -151,11 +259,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2208C5DE1BBB93500087E663 /* Build configuration list for PBXNativeTarget "Traverse" */;
 			buildPhases = (
+<<<<<<< HEAD
 				ED2C1DB85DB5BA1F77F412EB /* Check Pods Manifest.lock */,
 				2208C5BB1BBB93500087E663 /* Sources */,
 				2208C5BC1BBB93500087E663 /* Frameworks */,
 				2208C5BD1BBB93500087E663 /* Resources */,
 				745D48E1F640E954560C983E /* Copy Pods Resources */,
+=======
+				54B2765323163380756DFEDB /* Check Pods Manifest.lock */,
+				2208C5BB1BBB93500087E663 /* Sources */,
+				2208C5BC1BBB93500087E663 /* Frameworks */,
+				2208C5BD1BBB93500087E663 /* Resources */,
+				2208C5EF1BBBA4EE0087E663 /* Copy Frameworks */,
+				C12E234C86409676A29B90C1 /* Copy Pods Resources */,
+>>>>>>> origin/master
 			);
 			buildRules = (
 			);
@@ -213,6 +330,12 @@
 			mainGroup = 2208C5B61BBB93500087E663;
 			productRefGroup = 2208C5C01BBB93500087E663 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2208C5E61BBBA4D70087E663 /* Products */;
+					ProjectRef = 2208C5E51BBBA4D70087E663 /* Theo.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				2208C5BE1BBB93500087E663 /* Traverse */,
@@ -220,6 +343,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		2208C5EB1BBBA4D70087E663 /* Theo.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Theo.framework;
+			remoteRef = 2208C5EA1BBBA4D70087E663 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2208C5ED1BBBA4D70087E663 /* TheoTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = TheoTests.xctest;
+			remoteRef = 2208C5EC1BBBA4D70087E663 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		2208C5BD1BBB93500087E663 /* Resources */ = {
@@ -242,34 +382,57 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+<<<<<<< HEAD
 		745D48E1F640E954560C983E /* Copy Pods Resources */ = {
+=======
+		54B2765323163380756DFEDB /* Check Pods Manifest.lock */ = {
+>>>>>>> origin/master
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+<<<<<<< HEAD
 			name = "Copy Pods Resources";
+=======
+			name = "Check Pods Manifest.lock";
+>>>>>>> origin/master
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
+<<<<<<< HEAD
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		ED2C1DB85DB5BA1F77F412EB /* Check Pods Manifest.lock */ = {
+=======
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C12E234C86409676A29B90C1 /* Copy Pods Resources */ = {
+>>>>>>> origin/master
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+<<<<<<< HEAD
 			name = "Check Pods Manifest.lock";
+=======
+			name = "Copy Pods Resources";
+>>>>>>> origin/master
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
+<<<<<<< HEAD
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+=======
+			shellScript = "\"${SRCROOT}/../../LoginMap/Traverse/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+>>>>>>> origin/master
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -279,10 +442,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				26010A441BBBA9450027945D /* temp.m in Sources */,
+=======
+				2208C6031BBBADB90087E663 /* LoginViewController.swift in Sources */,
+				2208C5FC1BBBA5360087E663 /* Session.swift in Sources */,
+>>>>>>> origin/master
 				2208C5C71BBB93500087E663 /* StartViewController.swift in Sources */,
+				2208C5FB1BBBA5360087E663 /* Request.swift in Sources */,
+				2208C6051BBBAE030087E663 /* SignUpViewController.swift in Sources */,
+				2208C5F51BBBA52E0087E663 /* Relationship.swift in Sources */,
 				2208C5C51BBB93500087E663 /* AppDelegate.swift in Sources */,
+<<<<<<< HEAD
 				26010A461BBBACA30027945D /* mapViewController.swift in Sources */,
+=======
+				2208C5F61BBBA52E0087E663 /* Node.swift in Sources */,
+				2208C5FD1BBBA5360087E663 /* Client.swift in Sources */,
+				2208C5F71BBBA52E0087E663 /* Cypher.swift in Sources */,
+>>>>>>> origin/master
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,7 +584,11 @@
 		};
 		2208C5DF1BBB93500087E663 /* Debug */ = {
 			isa = XCBuildConfiguration;
+<<<<<<< HEAD
 			baseConfigurationReference = E44BBACF33DB0DE4A9505463 /* Pods.debug.xcconfig */;
+=======
+			baseConfigurationReference = CB967201A285DFD811312156 /* Pods.debug.xcconfig */;
+>>>>>>> origin/master
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -421,7 +602,11 @@
 		};
 		2208C5E01BBB93500087E663 /* Release */ = {
 			isa = XCBuildConfiguration;
+<<<<<<< HEAD
 			baseConfigurationReference = 78BFE542484D857DEF32DE76 /* Pods.release.xcconfig */;
+=======
+			baseConfigurationReference = 3534D106ACC0DBB98174B0D7 /* Pods.release.xcconfig */;
+>>>>>>> origin/master
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
