@@ -45,10 +45,10 @@
             </objects>
             <point key="canvasLocation" x="1262" y="349"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="REl-Vb-7Bm">
             <objects>
-                <viewController id="Vba-lR-PR8" sceneMemberID="viewController">
+                <viewController id="Vba-lR-PR8" customClass="LoginViewController" customModule="Traverse" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LOb-zb-NpI"/>
                         <viewControllerLayoutGuide type="bottom" id="br5-4O-q1Z"/>
@@ -93,10 +93,10 @@
             </objects>
             <point key="canvasLocation" x="1982" y="36"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="Vy4-tm-b6N">
             <objects>
-                <viewController id="Zfq-Zn-xEl" sceneMemberID="viewController">
+                <viewController id="Zfq-Zn-xEl" customClass="SignUpViewController" customModule="Traverse" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EJE-A2-qtc"/>
                         <viewControllerLayoutGuide type="bottom" id="Z0A-ob-Ehe"/>
