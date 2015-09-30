@@ -13,6 +13,14 @@
 		2208C5CC1BBB93500087E663 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2208C5CB1BBB93500087E663 /* Images.xcassets */; };
 		2208C5CF1BBB93500087E663 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2208C5CD1BBB93500087E663 /* LaunchScreen.xib */; };
 		2208C5DB1BBB93500087E663 /* TraverseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2208C5DA1BBB93500087E663 /* TraverseTests.swift */; };
+		2208C5EE1BBBA4E90087E663 /* Theo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2208C5EB1BBBA4D70087E663 /* Theo.framework */; };
+		2208C5F01BBBA5000087E663 /* Theo.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 2208C5EB1BBBA4D70087E663 /* Theo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2208C5F51BBBA52E0087E663 /* Relationship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2208C5F21BBBA52E0087E663 /* Relationship.swift */; };
+		2208C5F61BBBA52E0087E663 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2208C5F31BBBA52E0087E663 /* Node.swift */; };
+		2208C5F71BBBA52E0087E663 /* Cypher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2208C5F41BBBA52E0087E663 /* Cypher.swift */; };
+		2208C5FB1BBBA5360087E663 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2208C5F81BBBA5360087E663 /* Request.swift */; };
+		2208C5FC1BBBA5360087E663 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2208C5F91BBBA5360087E663 /* Session.swift */; };
+		2208C5FD1BBBA5360087E663 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2208C5FA1BBBA5360087E663 /* Client.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +31,35 @@
 			remoteGlobalIDString = 2208C5BE1BBB93500087E663;
 			remoteInfo = Traverse;
 		};
+		2208C5EA1BBBA4D70087E663 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2208C5E51BBBA4D70087E663 /* Theo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 01FB2CC019C7DAB800D429E7;
+			remoteInfo = Theo;
+		};
+		2208C5EC1BBBA4D70087E663 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2208C5E51BBBA4D70087E663 /* Theo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 01FB2CCB19C7DAB800D429E7;
+			remoteInfo = TheoTests;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2208C5EF1BBBA4EE0087E663 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2208C5F01BBBA5000087E663 /* Theo.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2208C5BF1BBB93500087E663 /* Traverse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Traverse.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +72,13 @@
 		2208C5D41BBB93500087E663 /* TraverseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TraverseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2208C5D91BBB93500087E663 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2208C5DA1BBB93500087E663 /* TraverseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraverseTests.swift; sourceTree = "<group>"; };
+		2208C5E51BBBA4D70087E663 /* Theo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Theo.xcodeproj; path = "../neo4j-ios-master/Source/Theo/Theo.xcodeproj"; sourceTree = "<group>"; };
+		2208C5F21BBBA52E0087E663 /* Relationship.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Relationship.swift; sourceTree = "<group>"; };
+		2208C5F31BBBA52E0087E663 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		2208C5F41BBBA52E0087E663 /* Cypher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cypher.swift; sourceTree = "<group>"; };
+		2208C5F81BBBA5360087E663 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		2208C5F91BBBA5360087E663 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		2208C5FA1BBBA5360087E663 /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2208C5EE1BBBA4E90087E663 /* Theo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +103,9 @@
 		2208C5B61BBB93500087E663 = {
 			isa = PBXGroup;
 			children = (
+				2208C5E51BBBA4D70087E663 /* Theo.xcodeproj */,
 				2208C5C11BBB93500087E663 /* Traverse */,
+				2208C5F11BBBA5120087E663 /* New Group */,
 				2208C5D71BBB93500087E663 /* TraverseTests */,
 				2208C5C01BBB93500087E663 /* Products */,
 			);
@@ -112,6 +158,28 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		2208C5E61BBBA4D70087E663 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2208C5EB1BBBA4D70087E663 /* Theo.framework */,
+				2208C5ED1BBBA4D70087E663 /* TheoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2208C5F11BBBA5120087E663 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				2208C5F81BBBA5360087E663 /* Request.swift */,
+				2208C5F91BBBA5360087E663 /* Session.swift */,
+				2208C5FA1BBBA5360087E663 /* Client.swift */,
+				2208C5F21BBBA52E0087E663 /* Relationship.swift */,
+				2208C5F31BBBA52E0087E663 /* Node.swift */,
+				2208C5F41BBBA52E0087E663 /* Cypher.swift */,
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,6 +190,7 @@
 				2208C5BB1BBB93500087E663 /* Sources */,
 				2208C5BC1BBB93500087E663 /* Frameworks */,
 				2208C5BD1BBB93500087E663 /* Resources */,
+				2208C5EF1BBBA4EE0087E663 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -179,6 +248,12 @@
 			mainGroup = 2208C5B61BBB93500087E663;
 			productRefGroup = 2208C5C01BBB93500087E663 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2208C5E61BBBA4D70087E663 /* Products */;
+					ProjectRef = 2208C5E51BBBA4D70087E663 /* Theo.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				2208C5BE1BBB93500087E663 /* Traverse */,
@@ -186,6 +261,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		2208C5EB1BBBA4D70087E663 /* Theo.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Theo.framework;
+			remoteRef = 2208C5EA1BBBA4D70087E663 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2208C5ED1BBBA4D70087E663 /* TheoTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = TheoTests.xctest;
+			remoteRef = 2208C5EC1BBBA4D70087E663 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		2208C5BD1BBB93500087E663 /* Resources */ = {
@@ -212,8 +304,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2208C5FC1BBBA5360087E663 /* Session.swift in Sources */,
 				2208C5C71BBB93500087E663 /* StartViewController.swift in Sources */,
+				2208C5FB1BBBA5360087E663 /* Request.swift in Sources */,
+				2208C5F51BBBA52E0087E663 /* Relationship.swift in Sources */,
 				2208C5C51BBB93500087E663 /* AppDelegate.swift in Sources */,
+				2208C5F61BBBA52E0087E663 /* Node.swift in Sources */,
+				2208C5FD1BBBA5360087E663 /* Client.swift in Sources */,
+				2208C5F71BBBA52E0087E663 /* Cypher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +507,7 @@
 				2208C5E01BBB93500087E663 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2208C5E11BBB93500087E663 /* Build configuration list for PBXNativeTarget "TraverseTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +516,7 @@
 				2208C5E31BBB93500087E663 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
