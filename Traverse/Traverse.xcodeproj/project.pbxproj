@@ -13,6 +13,9 @@
 		2208C5CC1BBB93500087E663 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2208C5CB1BBB93500087E663 /* Images.xcassets */; };
 		2208C5CF1BBB93500087E663 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2208C5CD1BBB93500087E663 /* LaunchScreen.xib */; };
 		2208C5DB1BBB93500087E663 /* TraverseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2208C5DA1BBB93500087E663 /* TraverseTests.swift */; };
+		26010A441BBBA9450027945D /* temp.m in Sources */ = {isa = PBXBuildFile; fileRef = 26010A431BBBA9450027945D /* temp.m */; };
+		26010A461BBBACA30027945D /* mapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26010A451BBBACA30027945D /* mapViewController.swift */; };
+		8A509F87EA96D333D016A9D3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FBB23926B503B1FEDA8325A /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,12 @@
 		2208C5D41BBB93500087E663 /* TraverseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TraverseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2208C5D91BBB93500087E663 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2208C5DA1BBB93500087E663 /* TraverseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraverseTests.swift; sourceTree = "<group>"; };
+		26010A421BBBA9450027945D /* Traverse-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Traverse-Bridging-Header.h"; sourceTree = "<group>"; };
+		26010A431BBBA9450027945D /* temp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = temp.m; sourceTree = "<group>"; };
+		26010A451BBBACA30027945D /* mapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mapViewController.swift; sourceTree = "<group>"; };
+		78BFE542484D857DEF32DE76 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		7FBB23926B503B1FEDA8325A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E44BBACF33DB0DE4A9505463 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A509F87EA96D333D016A9D3 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +72,8 @@
 				2208C5C11BBB93500087E663 /* Traverse */,
 				2208C5D71BBB93500087E663 /* TraverseTests */,
 				2208C5C01BBB93500087E663 /* Products */,
+				901F7FFAA7E4A12EE9D67C1F /* Pods */,
+				8525BE4D41275F1CB8451AA3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,11 +90,14 @@
 			isa = PBXGroup;
 			children = (
 				2208C5C41BBB93500087E663 /* AppDelegate.swift */,
+				26010A431BBBA9450027945D /* temp.m */,
 				2208C5C61BBB93500087E663 /* StartViewController.swift */,
 				2208C5C81BBB93500087E663 /* Main.storyboard */,
+				26010A451BBBACA30027945D /* mapViewController.swift */,
 				2208C5CB1BBB93500087E663 /* Images.xcassets */,
 				2208C5CD1BBB93500087E663 /* LaunchScreen.xib */,
 				2208C5C21BBB93500087E663 /* Supporting Files */,
+				26010A421BBBA9450027945D /* Traverse-Bridging-Header.h */,
 			);
 			path = Traverse;
 			sourceTree = "<group>";
@@ -112,6 +127,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		8525BE4D41275F1CB8451AA3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7FBB23926B503B1FEDA8325A /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		901F7FFAA7E4A12EE9D67C1F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E44BBACF33DB0DE4A9505463 /* Pods.debug.xcconfig */,
+				78BFE542484D857DEF32DE76 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +151,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2208C5DE1BBB93500087E663 /* Build configuration list for PBXNativeTarget "Traverse" */;
 			buildPhases = (
+				ED2C1DB85DB5BA1F77F412EB /* Check Pods Manifest.lock */,
 				2208C5BB1BBB93500087E663 /* Sources */,
 				2208C5BC1BBB93500087E663 /* Frameworks */,
 				2208C5BD1BBB93500087E663 /* Resources */,
+				745D48E1F640E954560C983E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,13 +241,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		745D48E1F640E954560C983E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED2C1DB85DB5BA1F77F412EB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2208C5BB1BBB93500087E663 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26010A441BBBA9450027945D /* temp.m in Sources */,
 				2208C5C71BBB93500087E663 /* StartViewController.swift in Sources */,
 				2208C5C51BBB93500087E663 /* AppDelegate.swift in Sources */,
+				26010A461BBBACA30027945D /* mapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,21 +407,28 @@
 		};
 		2208C5DF1BBB93500087E663 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E44BBACF33DB0DE4A9505463 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Traverse/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Traverse/Traverse-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		2208C5E01BBB93500087E663 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78BFE542484D857DEF32DE76 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Traverse/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Traverse/Traverse-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -409,6 +485,7 @@
 				2208C5E01BBB93500087E663 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2208C5E11BBB93500087E663 /* Build configuration list for PBXNativeTarget "TraverseTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +494,7 @@
 				2208C5E31BBB93500087E663 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
