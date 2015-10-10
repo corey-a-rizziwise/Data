@@ -15,11 +15,11 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        AddRelationship()
+        //AddRelationship()
         //CreateNode()
-//        println(RetrieveUserData())
+        //println(RetrieveUserData())
         
-        //RetrieveUserData()
+        RetrieveUserDataFromEmail()
         
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    func AddRelationship() {
+    /*func AddRelationship() {
         
         let url: String = "http://ec2-52-3-120-155.compute-1.amazonaws.com"
         let theo: Client = Client(baseURL: url, user: "neo4j", pass: "7ducksrw")
@@ -89,7 +89,7 @@ class ViewController: UIViewController {
                 
             })
         })
-    }
+    }*/
     
     /*func CreateNode(){
         let url: String = "http://ec2-52-3-120-155.compute-1.amazonaws.com"
@@ -107,7 +107,7 @@ class ViewController: UIViewController {
             println("new node \(node)")
         });
     }*/
-    /*func RetrieveUserData()
+    /*func RetrieveUserDataFromNodeID()
     {
         let url: String = "http://ec2-52-3-120-155.compute-1.amazonaws.com"
         let theo: Client = Client(baseURL: url, user: "neo4j", pass: "7ducksrw")
@@ -132,20 +132,32 @@ class ViewController: UIViewController {
     }*/
     
     
-    /*func RetrieveUserData()
+    func RetrieveUserDataFromEmail()
     {
 //        var value = "test"
         let url: String = "http://ec2-52-3-120-155.compute-1.amazonaws.com"
         let theo: Client = Client(baseURL: url, user: "neo4j", pass: "7ducksrw")
-        let cyperQuery: String = "MATCH(n {Email: 'corey.a.rizziwise@gmail.com'}) Return n.FirstName, n.LastName"
+        let cyperQuery: String = "MATCH(n {Email: 'corey.a.rizziwise@gmail.com'}) Return n.FirstName, n.LastName, n.Email, n.Password, n.id"
+        //let cyperQuery: String = "MATCH(n {Email: 'corey.a.rizziwise@gmail.com'}) Return n.FirstName as FirstName, n.LastName as LastName"
+        //let cyperQuery: String = "MATCH (u:User {id: 'asdfghjkl' }) WITH u MATCH (u)-[:REVIEW*0..1]->f WITH DISTINCT f,u RETURN u.FirstName as FirstName, u.LastName as LastName, u.Password as Password, u.Email as Email, f.City as City"
         let cyperParams: Dictionary<String, AnyObject> = ["user" : "neo4j"]
 
         theo.executeCypher(cyperQuery, params: cyperParams, completionBlock: {(cypher, error) in
-            value = cypher!.data[0]["n.FirstName"]! as! String
-            println(value)
+            value = cypher!.data[0]["n.id"] as! String
+            var FirstName = cypher!.data[0]["n.FirstName"] as! String
+            var LastName = cypher!.data[0]["n.LastName"] as! String
+            var Password = cypher!.data[0]["n.Password"] as! String
+            var Email = cypher!.data[0]["n.Email"]! as! String
+            println("User id: "+value)
+            println("User first name: "+FirstName)
+            println("User last name: "+LastName)
+            println("User password: "+Password)
+            println("User email: "+Email)
+            //println("response from cyper \(cypher)")
+
         })
 //        return value
-    }*/
+    }
     
 //    func returnValue(value: String) -> String {
 //        return value
